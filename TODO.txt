@@ -1,0 +1,68 @@
+ - User
+	- Role 
+		- name
+		- slug
+		- description
+	- Permission
+		- name
+		- slug
+		- description
+	- Export Excel
+	- first_name
+	- last_name
+	- email
+	- password
+	- 
+	--------------------------
+ - setting
+	- Site Name
+	- Phone
+	- Social links (Json)
+	- site email
+	- Meta discribtion
+	- meta keywords
+	- Logo
+	- Adress
+	- google maps
+	- 
+	--------------------------
+ - page
+	- title
+	- seo title
+	- seo discribtion
+	- Content
+	- status
+	--------------------------
+ - navigation
+	- title
+	- uri
+	- pid
+	- order
+	- 
+	-------------------------
+ - blog
+	- category
+		- title
+		- description
+	- post
+		- title
+		- Content
+		- status
+		- category_id
+	- comment
+		- content
+		- user_id
+		- post_id
+	--------------------------
+ - newsletter  (user_newsletter)
+	- title
+	- discribtion
+	--------------------------
+ - Requests
+	- subject
+	- content
+	- from
+	- user_id
+	--------------------------
+ - Reports
+	
