@@ -1,5 +1,5 @@
- - User
-	- Role 
+    - User
+	- Role
 		- name
 		- slug
 		- description
@@ -12,19 +12,19 @@
 	- last_name
 	- email
 	- password
-	- 
+	-
 	--------------------------
  - setting
 	- Site Name
 	- Phone
 	- Social links (Json)
 	- site email
-	- Meta discribtion
+	- Meta description
 	- meta keywords
 	- Logo
 	- Adress
 	- google maps
-	- 
+	-
 	--------------------------
  - page
 	- title
@@ -38,7 +38,7 @@
 	- uri
 	- pid
 	- order
-	- 
+	-
 	-------------------------
  - blog
 	- category
@@ -65,4 +65,3 @@
 	- user_id
 	--------------------------
  - Reports
-	

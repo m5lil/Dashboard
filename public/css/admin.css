@@ -1,0 +1,42 @@
+body {
+  direction: rtl;
+}
+
+.sidebar {
+  width: 260px;
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+@font-face {
+  font-family: 'DINNextLTW23-Regular';
+  src: url("../fonts/DINNextLTW23-Regular.eot");
+  src: url("../fonts/DINNextLTW23-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/DINNextLTW23-Regular.woff") format("woff"), url("../fonts/DINNextLTW23-Regular.ttf") format("truetype"), url("../fonts/DINNextLTW23-Regular.svg#DINNextLTW23-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.slide-fade-enter-active {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+  -webkit-transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter, .slide-fade-leave-active {
+  padding-left: 10px;
+  opacity: 0;
+}
+
+.swal2-modal hr {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=admin.css.map */

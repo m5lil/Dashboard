@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 
 Route::get('/dashboard', 'DashController@index');
+Route::get('dashboard/misc', function () {
+    return view('backend.misc');
+});
