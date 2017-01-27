@@ -148,7 +148,7 @@ export default {
       last_page : 0,
       next_page_url : '',
       prev_page_url : '',
-      first_page_url: '/api/pages/',
+      first_page_url: '/api/pages',
       per_page: 0,
       total : 0,
       edit: false,
@@ -172,7 +172,7 @@ export default {
 
     fetchPage: function(page_url){
       this.loading = true
-      page_url = page_url || '/api/pages/'
+      page_url = page_url || '/api/pages'
       this.$http.get(page_url).then((response) => {
         this.makePagination(response.data.pages)
         this.pages = response.data.pages.data
@@ -213,7 +213,7 @@ export default {
         cancelButtonColor: '#d33',
         confirmButtonText: 'نعم, أحذف!',
       }).then(function() {
-        self.$http.delete('/api/pages/' + id).then((data) => {
+        self.$http.delete('/api/pages' + id).then((data) => {
           self.fetchPage()
         })
         swal({
@@ -243,7 +243,7 @@ export default {
         cancelButtonColor: '#d33',
         confirmButtonText: 'نعم, أحذف!',
       }).then(function() {
-        self.$http.delete('/api/pages/' + self.pageIds).then((data) => {
+        self.$http.delete('/api/pages' + self.pageIds).then((data) => {
           console.log(self.pageIds);
           self.fetchPage()
       })
@@ -266,7 +266,7 @@ export default {
 
     ShowPage: function (id) {
       this.edit = true
-      this.$http.get('/api/pages/' + id).then((data) => {
+      this.$http.get('/api/pages' + id).then((data) => {
         this.newPage.id = data.data.id
         this.newPage.title = data.data.title
         this.newPage.content = data.data.content
@@ -299,7 +299,7 @@ export default {
       this.newPage.content = tinyMCE.activeEditor.getContent()
       var page = this.newPage
       var id = page.id
-      this.$http.patch('/api/pages/' + id, page).then((data) => {
+      this.$http.patch('/api/pages' + id, page).then((data) => {
         this.newPage = { title:'', content:'', status:true, seo_title:'', seo_description:''}
         this.form = false
         swal({
@@ -320,7 +320,7 @@ export default {
       var page = this.newPage
 
       // send post
-      this.$http.post('/api/pages/', page).then((data) => {
+      this.$http.post('/api/pages', page).then((data) => {
         this.newPage = { title:'', content:'', status:true, seo_title:'', seo_description:''}
         swal({
           title: 'تم بنجاح!',
@@ -357,7 +357,8 @@ export default {
       return self.pages.filter(function (pages) {
         return pages.title.indexOf(self.searchKey) !== -1
       })
-  }
+    },
+
   }
 }
 </script>

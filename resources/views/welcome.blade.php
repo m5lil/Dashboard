@@ -65,6 +65,11 @@
         </style>
     </head>
     <body>
+      <?php
+      $url = parse_url('mysql://b69894e20aea4f:76aaa9a7@us-cdbr-iron-east-04.cleardb.net/heroku_9b827e154bd68ea?reconnect=true');
+      echo substr($url["path"], 1);
+       ?>
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -76,7 +81,6 @@
                     @endif
                 </div>
             @endif
-
             <div class="content">
                 <div class="title m-b-md">
                     Hala Bel 3'aly
