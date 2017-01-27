@@ -43,8 +43,7 @@ return [
     | choice installed on your machine before you begin development.
     |
     */
-    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
+    $url = parse_url(env("CLEARDB_DATABASE_URL"));
     $host = $url["host"];
     $username = $url["user"];
     $password = $url["pass"];
