@@ -20,4 +20,4 @@ Route::get('/user', function (Request $request) {
 // Route::resource('roles', 'RolesController');
 // Route::resource('permissions', 'PermissionController');
 // Route::resource('menus', 'MenuController');
-Route::resource('pages', 'PageController');
+Route::resource('/pages', 'PageController');
